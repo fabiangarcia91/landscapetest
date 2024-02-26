@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction Company landing Page</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./js.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="row container">
+      <a href="#" class="logo"
+        ><img src="./imgs/landscapelogo.svg" alt="Landscape logo"
+      /></a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          <li><a href="tel:7607558543" class="callnow">760-755-8543</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <!--  Courasel Hero Section -->
+
+    <section class="hero">
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="imgs/landscaping hero 1.webp" />
+            <div class="content">
+              <div class="author">Fine Landscape</div>
+              <div class="title">Landscaping</div>
+              <div class="topic">San Diego</div>
+              <div class="des">
+                Serving San Diego County for over 15 years. Full service
+                landscape company specializing in landscape design,
+                installation, and maintenance. We are a family owned and
+                operated business that takes pride in our work and customer
+                service. We are licensed, bonded, and insured. We offer free
+                estimates and consultations. We look forward to working with
+                you!
+                <div class="buttons">
+                  <button><a class="anchor" href="">SEE MORE</a></button>
+                  <button><a class="anchor" href="">SUBSCRIBE</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="imgs/landscaping hero 2.webp" />
+              <div class="content">
+                <div class="author">Fine Landscape</div>
+                <div class="title">Landscaping</div>
+                <div class="topic">San Diego</div>
+                <div class="des">
+                  Serving San Diego County for over 15 years. Full service
+                  landscape company specializing in landscape design,
+                  installation, and maintenance. We are a family owned and
+                  operated business that takes pride in our work and customer
+                  service. We are licensed, bonded, and insured. We offer free
+                  estimates and consultations. We look forward to working with
+                  you!
+                </div>
+                <div class="buttons">
+                  <button><a class="anchor" href="">SEE MORE</a></button>
+                  <button><a class="anchor" href="">SUBSCRIBE</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="imgs/landscaping hero 1.webp" />
+              <div class="content">
+                <div class="author">Fine Landscape</div>
+                <div class="title">Landscaping</div>
+                <div class="topic">San Diego</div>
+                <div class="des">
+                  Serving San Diego County for over 15 years. Full service
+                  landscape company specializing in landscape design,
+                  installation, and maintenance. We are a family owned and
+                  operated business that takes pride in our work and customer
+                  service. We are licensed, bonded, and insured. We offer free
+                  estimates and consultations. We look forward to working with
+                  you!
+                </div>
+                <div class="buttons">
+                  <div class="buttons">
+                    <button><a class="anchor" href="">SEE MORE</a></button>
+                    <button><a class="anchor" href="">SUBSCRIBE</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="imgs/landscaping hero 1.webp" />
+              <div class="content">
+                <div class="author">Fine Landscape</div>
+                <div class="title">Landscaping</div>
+                <div class="topic">San Diego</div>
+                <div class="des">
+                  Serving San Diego County for over 15 years. Full service
+                  landscape company specializing in landscape design,
+                  installation, and maintenance. We are a family owned and
+                  operated business that takes pride in our work and customer
+                  service. We are licensed, bonded, and insured. We offer free
+                  estimates and consultations. We look forward to working with
+                  you!
+                </div>
+                <div class="buttons">
+                  <button><a class="anchor" href="">SEE MORE</a></button>
+                  <button><a class="anchor" href="">SUBSCRIBE</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="imgs/landscaping hero 1.webp" />
+            <div class="content">
+              <div class="title">Residential</div>
+              <div class="description">La Jolla</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/landscaping hero 2.webp" />
+            <div class="content">
+              <div class="title">Residential</div>
+              <div class="description">Rancho Santafe</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/landscaping hero 1.webp" />
+            <div class="content">
+              <div class="title">Residential</div>
+              <div class="description">Delmar</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/landscaping hero 2.webp" />
+            <div class="content">
+              <div class="title">Residential</div>
+              <div class="description">San Marcos</div>
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+        <div class="arrows">
+          <button id="prev">></button>
+          <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+      </div>
+    </section>
+    <!-- End Courasel Hero Section -->
+
+    <!-- Contact us Form -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Contact us for a free estimate!</h2>
+          <p>
+            We are ready to work on project of any complexity, whether it's
+            commercial or residential.
+          </p>
+          <form
+          action="https://formspree.io/f/xqkrbkbo" 
+          method="POST"
+        >
+            <div class="form row">
+              <input type="text" name="Clientname" id="Name" placeholder="Your Name*" required/>
+              <input type="email" name="Clientemail" id="email" placeholder="Email*" required />
+              <select name="Reason for Contacting" id="Contact Reason">
+                <option value="0">Reason For Contacting*</option>
+                <option value="1">Landscape Design</option>
+                <option value="2">Commerical Landscape</option>
+                <option value="3">Irrigation Services</option>
+                <option value="4">Hardsacping</option>
+                <option value="5">Leaf Cleaning</option>
+              </select>
+              <input type="tel" name="Clientphone" id="Phone number" placeholder="Phone*" required/>
+            </div>
+            <div>
+              <textarea
+                name="Additional Information"
+                id="Additinoal info"
+                cols="30"
+                rows="10"
+                placeholder="Job details..."
+              ></textarea>
+              <p>* indicates a required field.</p>
+            </div>
+            <button type="submit" class="page-btn-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Form -->
+
+    <!-- Projects -->
+    <section class="project container" id="project">
+      <h2 class="project-heading">Our Projects</h2>
+      <div class="project-filter-slider row">
+        <div class="filter row">
+          <div class="filter-btn btn-active" data-cat="all">All</div>
+          <div class="filter-btn" data-cat="commercial">Commercial</div>
+          <div class="filter-btn" data-cat="residential">Residential</div>
+          <div class="filter-btn" data-cat="other">Other</div>
+        </div>
+        <div class="project-slider swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide column" data-type="residential">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landProject1.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>La Jolla</h3>
+                  <p>Turf Installation and tree maintenance.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject2.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Ocean Side</h3>
+                  <p>Drive way landscaping</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide column" data-type="commercial">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject3.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Chula Vista</h3>
+                  <p>Backyard remodel.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject4.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Delmar</h3>
+                  <p>Tree installation</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide column" data-type="residential">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject5.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Rancho Bernardo</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject6.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Delmar</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide column" data-type="commercial">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject7.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Vista</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject8.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Carslbad</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide column" data-type="residential">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landProject1.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Escondido</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject2.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Coronado</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide column" data-type="commercial">
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject3.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>Rancho Santafe</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+              <a href="#" class="p-card">
+                <div class="slide-img row">
+                  <img src="./imgs/landproject4.webp" alt="" />
+                </div>
+                <div class="slide-content">
+                  <h3>San Marcos</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="no-results d-none">
+              <h3>No results found</h3>
+              <p>Try to change the filters</p>
+            </div>
+          </div>
+          <div class="project-arrow row">
+            <div class="swiper-button-prev">
+              <img src="./icons/left-arrow.svg" alt="" />
+              Back
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+              Next
+              <img src="./icons/right-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- Reputation -->
+    <section class="reputation container">
+      <h2>Our reputation</h2>
+      <div class="reputation-cards column">
+        <div class="r-card">
+          <svg width="38" height="38" viewBox="0 0 38 38">
+            <path
+              d="M34 12.3333C34.884 12.3333 35.7319 12.6845 36.357 13.3096C36.9821 13.9348 37.3333 14.7826 37.3333 15.6667V22.3333C37.3333 23.2174 36.9821 24.0652 36.357 24.6904C35.7319 25.3155 34.884 25.6667 34 25.6667H32.23C31.8236 28.8888 30.2554 31.852 27.8195 34C25.3837 36.148 22.2476 37.3333 19 37.3333V34C21.6521 34 24.1957 32.9464 26.071 31.0711C27.9464 29.1957 29 26.6522 29 24V14C29 11.3478 27.9464 8.80429 26.071 6.92893C24.1957 5.05357 21.6521 4 19 4C16.3478 4 13.8043 5.05357 11.9289 6.92893C10.0535 8.80429 8.99996 11.3478 8.99996 14V25.6667H3.99996C3.1159 25.6667 2.26806 25.3155 1.64294 24.6904C1.01782 24.0652 0.666626 23.2174 0.666626 22.3333V15.6667C0.666626 14.7826 1.01782 13.9348 1.64294 13.3096C2.26806 12.6845 3.1159 12.3333 3.99996 12.3333H5.76996C6.17668 9.11149 7.74509 6.14878 10.1809 4.00112C12.6167 1.85346 15.7525 0.668457 19 0.668457C22.2474 0.668457 25.3832 1.85346 27.819 4.00112C30.2548 6.14878 31.8232 9.11149 32.23 12.3333H34ZM11.9333 25.3083L13.7 22.4817C15.2884 23.4767 17.1256 24.003 19 24C20.8743 24.003 22.7115 23.4767 24.3 22.4817L26.0666 25.3083C23.9487 26.6352 21.4992 27.3372 19 27.3333C16.5007 27.3372 14.0512 26.6352 11.9333 25.3083Z"
+            />
+          </svg>
+          <h3>Exccellent Service</h3>
+          <p>
+            Elevate your outdoor space with our commitment to excellence. From
+            personalized consultations to timely project completion, your dream
+            landscape is just a call away.
+          </p>
+        </div>
+        <div class="r-card">
+          <svg width="38" height="38" viewBox="0 0 640 512">
+            <path
+              d="M184 88C184 118.9 158.9 144 128 144C97.07 144 72 118.9 72 88C72 57.07 97.07 32 128 32C158.9 32 184 57.07 184 88zM208.4 196.3C178.7 222.7 160 261.2 160 304C160 338.3 171.1 369.8 192 394.5V416C192 433.7 177.7 448 160 448H96C78.33 448 64 433.7 64 416V389.2C26.16 371.2 0 332.7 0 288C0 226.1 50.14 176 112 176H144C167.1 176 190.2 183.5 208.4 196.3V196.3zM64 245.7C54.04 256.9 48 271.8 48 288C48 304.2 54.04 319.1 64 330.3V245.7zM448 416V394.5C468 369.8 480 338.3 480 304C480 261.2 461.3 222.7 431.6 196.3C449.8 183.5 472 176 496 176H528C589.9 176 640 226.1 640 288C640 332.7 613.8 371.2 576 389.2V416C576 433.7 561.7 448 544 448H480C462.3 448 448 433.7 448 416zM576 330.3C585.1 319.1 592 304.2 592 288C592 271.8 585.1 256.9 576 245.7V330.3zM568 88C568 118.9 542.9 144 512 144C481.1 144 456 118.9 456 88C456 57.07 481.1 32 512 32C542.9 32 568 57.07 568 88zM256 96C256 60.65 284.7 32 320 32C355.3 32 384 60.65 384 96C384 131.3 355.3 160 320 160C284.7 160 256 131.3 256 96zM448 304C448 348.7 421.8 387.2 384 405.2V448C384 465.7 369.7 480 352 480H288C270.3 480 256 465.7 256 448V405.2C218.2 387.2 192 348.7 192 304C192 242.1 242.1 192 304 192H336C397.9 192 448 242.1 448 304zM256 346.3V261.7C246 272.9 240 287.8 240 304C240 320.2 246 335.1 256 346.3zM384 261.7V346.3C393.1 335 400 320.2 400 304C400 287.8 393.1 272.9 384 261.7z"
+            />
+          </svg>
+          <h3>Experienced Crew</h3>
+          <p>
+            Experience the power of teamwork with passionate professionals
+            dedicated to turning your landscaping dreams into reality.
+          </p>
+        </div>
+        <div class="r-card">
+          <svg width="34" height="34" viewBox="0 0 34 34">
+            <path
+              d="M33.3167 25.4333L24.0667 16.1833L26.6833 13.5667L20.4333 7.31665L17.8167 9.93332L8.56668 0.683319L0.68335 8.56665L9.93335 17.8167L2.00002 25.75V32H8.25002L16.1833 24.0667L25.4333 33.3167L33.3167 25.4333V25.4333ZM12.3 15.45L5.40002 8.56665L8.56668 5.39999L10.6833 7.51665L8.70002 9.49999L11.05 11.85L13.0333 9.86665L15.45 12.2833L12.3 15.45V15.45ZM18.55 21.7L21.7167 18.5333L24.1334 20.95L22.15 22.9333L24.5 25.2833L26.4833 23.3L28.6 25.4167L25.4333 28.5833L18.55 21.7V21.7ZM22.2217 5.53832L26.4517 1.30665L32.6983 7.55332L28.4684 11.785L22.2217 5.53832Z"
+            />
+          </svg>
+          <h3>Innovative Design</h3>
+          <p>
+            Immerse yourself in beauty and functionality with our innovative
+            landscape designs tailored to your style and San Diego property.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Reputation -->
+
+    <!-- About -->
+    <section class="about column container" id="about">
+      <div class="about-img">
+        <img src="./imgs/Contractor Image.webp" alt="Contractor Image" />
+      </div>
+      <div class="about-content">
+        <h2>About us</h2>
+        <p>
+          For more than 15 years, we have been keeping San Diego commercial and
+          residential properties looking their best. We are a family owned and
+          operated business that takes pride in our work and customer service.
+          We are licensed, bonded, and insured. We offer free estimates and
+          consultations. We look forward to working with you!
+        </p>
+        <p>
+          We are a full service landscape company specializing in landscape
+          design, installation, and maintenance.
+        </p>
+        <a href="#" class="page-btn">More on our history</a>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Service -->
+    <section class="service" id="service">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="service-cards column">
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg width="41" height="40" viewBox="0 0 41 40">
+                <g>
+                  <path
+                    d="M11.1 31.3L11.5166 35L14.2166 32.4333L18.8333 19.7667C17.7 19.4833 16.7 18.9167 15.8833 18.1333L11.1 31.3ZM25.1166 18.1333C24.3 18.9167 23.2833 19.4833 22.1666 19.7667L26.7833 32.4333L29.4833 35L29.9166 31.3L25.1166 18.1333V18.1333ZM25.4 14.3333C25.9 11.7333 24.4 9.43333 22.1666 8.63333V6.66667C22.1666 5.75 21.4166 5 20.5 5C19.5833 5 18.8333 5.75 18.8333 6.66667V8.63333C16.9 9.33333 15.5 11.1667 15.5 13.3333C15.5 16.4 18.2666 18.8333 21.4333 18.25C23.4 17.8833 25.0166 16.3 25.4 14.3333V14.3333ZM20.5 15C19.5833 15 18.8333 14.25 18.8333 13.3333C18.8333 12.4167 19.5833 11.6667 20.5 11.6667C21.4166 11.6667 22.1666 12.4167 22.1666 13.3333C22.1666 14.25 21.4166 15 20.5 15Z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h4>Landscaping Design</h4>
+          </a>
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg width="41" height="40" viewBox="0 0 41 40">
+                <g>
+                  <path
+                    d="M32.1517 3.33337H15.5167C13.665 3.33337 12.1667 4.83171 12.1667 6.68337V16.0784L4.33001 23.815C4.0952 24.0473 3.93468 24.344 3.86881 24.6676C3.80295 24.9913 3.83471 25.3271 3.96006 25.6327C4.08542 25.9382 4.29872 26.1996 4.5729 26.3837C4.84707 26.5678 5.16976 26.6663 5.50001 26.6667V35C5.50001 35.4421 5.6756 35.866 5.98816 36.1786C6.30073 36.4911 6.72465 36.6667 7.16668 36.6667H33.8333C34.2754 36.6667 34.6993 36.4911 35.0119 36.1786C35.3244 35.866 35.5 35.4421 35.5 35V6.68171C35.5 4.83171 34.0033 3.33337 32.1517 3.33337ZM18.7033 25.185V33.3334H8.83334V24.0534L13.8117 19.1384L18.7033 24.1434V25.185V25.185ZM22.1667 15H18.8333V11.6667H22.1667V15ZM28.8333 28.3334H25.5V25H28.8333V28.3334ZM28.8333 21.6667H25.5V18.3334H28.8333V21.6667ZM28.8333 15H25.5V11.6667H28.8333V15Z"
+                  />
+                  <path d="M12.1666 25H15.5V28.3333H12.1666V25Z" />
+                </g>
+              </svg>
+            </div>
+            <h4>Commercial Landscaping</h4>
+          </a>
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg
+                enable-background="new 0 0 60 60"
+                height="60"
+                viewBox="0 0 60 60"
+                width="60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m17 56c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-14c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6z"
+                />
+                <path
+                  d="m38 56c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"
+                />
+                <circle cx="38" cy="50" r="2" />
+                <path d="m3 54h2v2h-2z" />
+                <path d="m7 54h52v2h-52z" />
+                <path d="m23.698 49h9.302v2h-9.302z" />
+                <path
+                  d="m40 45.101h-2v-3.101c0-.814-.479-1.532-1.226-1.845-8.017-1.989-22.829-5.659-24.774-6.128v10.37h-2v-10.397c0-1.103.897-2 2-2 .169 0 .204 0 25.324 6.23l.12.038c1.553.602 2.556 2.067 2.556 3.732z"
+                />
+                <path
+                  d="m10 51c-4.411 0-8-2.691-8-6v-8c0-1.103.897-2 2-2l .403.047 6.875 1.992-.557 1.922-6.784-1.963.063 8.002c0 2.168 2.748 4 6 4l .263-.004.061 2z"
+                />
+                <path
+                  d="m34 38.166h-2v-7.101c0-.587-.478-1.065-1.065-1.065h-11.87c-.587 0-1.065.478-1.065 1.065v3.142h-2v-3.142c0-1.69 1.375-3.065 3.065-3.065h11.869c1.691 0 3.066 1.375 3.066 3.065z"
+                />
+                <path
+                  d="m16.49 30.904-8.904-8.904h-5.586v-2h6.414l9.49 9.49z"
+                />
+                <path
+                  d="m57 55h-2v-13.769c-1.703.8-3 3.576-3 6.769h-2c0-5.047 2.636-9 6-9h1z"
+                />
+                <path
+                  d="m48 55h-2v-12h1c2.757 0 5 2.243 5 5h-2c0-1.304-.836-2.416-2-2.829z"
+                />
+                <path
+                  d="m3.5 38.919h1.999v3.162h-1.999z"
+                  transform="matrix(.3165 .9486 -.9486 .3165 41.4934 23.4123)"
+                />
+                <path
+                  d="m3.5 42.919h1.999v3.162h-1.999z"
+                  transform="matrix(.3165 .9486 -.9486 .3165 45.2877 26.1462)"
+                />
+                <path
+                  d="m24.355 39.519h5.728v2h-5.728z"
+                  transform="matrix(.9707 .2404 -.2404 .9707 10.5374 -5.3546)"
+                />
+                <path d="m30 32h3v2h-3z" />
+                <path d="m26 32h2v2h-2z" />
+                <circle cx="17" cy="48" r="2" />
+                <path d="m54 25h-2v2h2z" />
+                <path d="m52 30h-2v2h2z" />
+                <path d="m47 18h-2v2h2z" />
+                <path d="m40 25h-2v2h2z" />
+                <path d="m42 20h-2v2h2z" />
+                <path d="m52 20h-2v2h2z" />
+                <path d="m42 30h-2v2h2z" />
+                <path d="m47 32h-2v2h2z" />
+                <path d="m26 19h-2v2h2z" />
+                <path d="m22 17h-2v2h2z" />
+                <path d="m28 23h-2v2h2z" />
+                <path d="m8 31h-2v2h2z" />
+                <path d="m7 27h-2v2h2z" />
+                <path d="m14 17h-2v2h2z" />
+                <path d="m18 16h-2v2h2z" />
+                <path d="m42 10h-2v2h2z" />
+                <path d="m40 15h-2v2h2z" />
+                <path d="m35 3h-2v2h2z" />
+                <path d="m28 10h-2v2h2z" />
+                <path d="m30 5h-2v2h2z" />
+                <path d="m40 5h-2v2h2z" />
+                <path d="m30 15h-2v2h2z" />
+                <path d="m35 17h-2v2h2z" />
+              </svg>
+            </div>
+            <h4>Lawn Care and Maintenance</h4>
+          </a>
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg
+                enable-background="new 0 0 60 60"
+                height="60"
+                viewBox="0 0 60 60"
+                width="60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="m7.001 37h17.999v2h-17.999z" />
+                <path d="m41 37h16v2h-16z" />
+                <path d="m3 45h10.268v2h-10.268z" />
+                <path d="m3 52h10.269v2h-10.269z" />
+                <path
+                  d="m25 55h-10c-1.654 0-3-1.346-3-3v-5c0-1.654 1.346-3 3-3h10v2h-10c-.552 0-1 .448-1 1v5c0 .552.448 1 1 1h10z"
+                />
+                <path d="m25 34h16v2h-16z" />
+                <path
+                  d="m39 57h-12c-1.654 0-3-1.346-3-3v-18.795l-2.785-6.498c-.134-.314-.191-.767-.21-.945l-.005-.103c0-1.466 1.193-2.659 2.659-2.659h18.682c1.466 0 2.659 1.193 2.659 2.659l-.005.101c-.019.18-.075.634-.211.948l-2.784 6.497v18.795c0 1.654-1.346 3-3 3zm-15.998-29.386c.015.129.042.275.059.326l2.939 6.855v19.205c0 .552.448 1 1 1h12c .552 0 1-.448 1-1v-19.205l2.947-6.878c.011-.034.036-.176.052-.302-.023-.343-.31-.615-.658-.615h-18.682c-.348 0-.635.271-.657.614z"
+                />
+                <path d="m52 19h-2v2h2z" />
+                <path d="m55 16h-2v2h2z" />
+                <path d="m58 13h-2v2h2z" />
+                <path d="m45 17h-2v2h2z" />
+                <path d="m47 13h-2v2h2z" />
+                <path d="m49 9h-2v2h2z" />
+                <path d="m16 19h-2v2h2z" />
+                <path d="m13 16h-2v2h2z" />
+                <path d="m10 13h-2v2h2z" />
+                <path d="m23 17h-2v2h2z" />
+                <path d="m21 13h-2v2h2z" />
+                <path d="m19 9h-2v2h2z" />
+                <path d="m34 15h-2v2h2z" />
+                <path d="m34 11h-2v2h2z" />
+                <path d="m34 7h-2v2h2z" />
+                <path d="m34 3h-2v2h2z" />
+                <path
+                  d="m50 54h-2v-5.214c-1.135 1.661-2 3.61-2 5.214h-2c0-3.033 2.226-6.64 4.293-8.707l1.707-1.707z"
+                />
+                <path
+                  d="m57 53h-2c0-3.877-.492-6.051-1.381-7.597-.571 2.705-1.869 6.595-4.617 6.597l-.003-2c1.432-.001 2.667-4.132 3.008-7.113l.235-2.059 1.465 1.465c2.4 2.4 3.293 5.303 3.293 10.707z"
+                />
+                <path d="m3 37h2v2h-2z" />
+              </svg>
+            </div>
+            <h4>Irrigation Systems</h4>
+          </a>
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg
+                enable-background="new 0 0 60 60"
+                height="60"
+                viewBox="0 0 60 60"
+                width="60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m47 47.421h-2v-7.421c0-.552-.448-1-1-1h-4.995v-2h4.995c1.654 0 3 1.346 3 3z"
+                />
+                <path
+                  d="m29 45h-2v-5c0-1.654 1.346-3 3-3h5.003v2h-5.003c-.552 0-1 .448-1 1z"
+                />
+                <path d="m38 43h2v2h-2z" />
+                <path d="m35 13h4v2h-4z" />
+                <path
+                  d="m34.894 47.236c-.841-.843-.896-2.694-.894-3.242v-29.428l-3.544-2.126c-.898-.54-1.456-1.526-1.456-2.573v-3.867c0-1.654 1.346-3 3-3h10c1.654 0 3 1.346 3 3v3.867c0 1.047-.558 2.033-1.455 2.573l-3.545 2.126v26.434h-2v-27.566l4.515-2.708c.298-.18.485-.509.485-.859v-3.867c0-.552-.448-1-1-1h-10c-.552 0-1 .448-1 1v3.867c0 .35.187.679.486.858l4.514 2.709v30.566c-.002.741.151 1.629.315 1.83z"
+                />
+                <path
+                  d="m21 22h-1v-1c0-3.57 0-11 6-11h1v1c0 6.886-3.051 11-6 11zm3.971-9.87c-1.938.538-2.814 2.791-2.951 7.479 1.246-.876 2.724-3.263 2.951-7.479z"
+                />
+                <path
+                  d="m19.064 32h-1v-1c0-4.188 4.62-7 8.936-7h1v1c0 4.71-2.923 7-8.936 7zm6.871-5.928c-2.542.341-5.055 1.853-5.707 3.895 4.268-.259 5.444-1.978 5.707-3.895z"
+                />
+                <path
+                  d="m11.488 24h-.925l-.072-.922c-.205-2.626.651-5.185 2.349-7.021 1.21-1.307 2.726-2.057 4.16-2.057h1v1c0 4.19-.74 9-6.512 9zm4.488-7.786c-.573.23-1.148.642-1.667 1.202-1.092 1.18-1.747 2.818-1.836 4.521 2.344-.328 3.339-1.967 3.503-5.723z"
+                />
+                <path
+                  d="m12 14h-1c-4.402 0-6-4.784-6-8v-1h1c5.758 0 6 2.452 6 8zm-4.933-6.981c.209 1.705.953 4.193 2.927 4.829-.045-3.999-.427-4.718-2.927-4.829z"
+                />
+                <path
+                  d="m12.363 22h-1.061c-6.913 0-8.302-2.296-8.302-6v-1h1c6.57 0 8.141 3.23 8.301 5.941zm-7.335-4.97c.132 1.544.877 2.763 5.105 2.946-.384-1.364-1.557-2.728-5.105-2.946z"
+                />
+                <path
+                  d="m13.73 30h-1.281c-6.001 0-8.449-1.738-8.449-6v-1h1c3.248 0 7.14.654 8.419 5.757zm-7.674-4.967c.21 1.564 1.147 2.715 4.991 2.931-.836-1.875-2.355-2.757-4.991-2.931z"
+                />
+                <path d="m16 40.998h6.095v2h-6.095z" />
+                <path
+                  d="m16 43c-.701 0-1.24-.511-1.985-1.218-1.255-1.19-2.389-2.131-3.543-1.638l-.793-1.836c2.462-1.063 4.495.869 5.712 2.022.282.268.67.635.813.706-.001 0-.076-.036-.204-.036z"
+                />
+                <path
+                  d="m11 44c-1.654 0-3-1.346-3-3s1.346-3 3-3v2c-.552 0-1 .448-1 1s .448 1 1 1c3.413 0 4.175-.589 4.293-.707l1.414 1.414c-.882.882-2.695 1.293-5.707 1.293z"
+                />
+                <path
+                  d="m20 50c-1.654 0-3-1.346-3-3 0-2.486-.753-3.875-1.053-4.009l.053-1.991c2.062 0 3 3.11 3 6 0 .552.448 1 1 1z"
+                />
+                <path
+                  d="m19 58c-1.67 0-10-.184-10-3.804 0-3.277 4.032-9.593 5.614-11.942-1.341-1.347-2.614-4.317-2.614-7.254v-1h1c3.739 0 5.114.113 5.89.785.335.29.603.577.833.827.123.133.284.307.38.387 1.162-.032 1.897-.603 1.897-.999v-1h1c1.654 0 3 1.346 3 3 0 2.302-1.616 4.219-2.587 5.162 1.51 2.272 5.587 8.716 5.587 12.034 0 3.433-6.993 3.804-10 3.804zm-2.834-17h1.756l-1.104 1.574c-1.618 2.309-5.818 8.898-5.818 11.622 0 .613 2.823 1.804 8 1.804 5.326 0 8-1.156 8-1.804 0-2.73-4.135-9.322-5.729-11.633l-.539-.781.753-.579c.024-.018 2.515-1.974 2.515-4.203 0-.302-.135-.573-.347-.757-.619 1.045-2.005 1.757-3.653 1.757-.793 0-1.299-.548-1.746-1.03-.188-.203-.402-.438-.674-.673-.342-.231-2.122-.282-3.526-.294.285 2.668 1.628 4.617 2.112 4.997z"
+                />
+                <path
+                  d="m20 36.328h-2c0-10.613.631-14.836 2.41-16.136l1.18 1.615c-1.59 1.162-1.59 11.217-1.59 14.521z"
+                />
+                <path
+                  d="m16 36.055c-5.711 0-6-19.205-6-23.055h2c0 13.557 2.365 21.055 4 21.055z"
+                />
+                <path
+                  d="m37.015 11.552-4.215-3.307 1.234-1.574 2.983 2.34 2.992-2.341 1.232 1.576z"
+                />
+                <path
+                  d="m34 56h-2c0-2.757 2.243-5 5-5 .377 0 .729.034 1.066.105.434-2.885 2.929-5.105 5.934-5.105 2.669 0 4.929 1.727 5.697 4.183.379-.105.824-.183 1.303-.183 2.757 0 5 2.243 5 5 0 .276-.023.556-.069.833l-1.973-.328c.027-.164.042-.333.042-.505 0-1.654-1.346-3-3-3-.816 0-1.516.414-1.522.418l-1.369.822-.147-1.587c-.186-2.083-1.889-3.653-3.962-3.653-2.206 0-4 1.794-4 4 0 .158.029.465.029.465l.186 1.955-1.691-1.005c-.499-.295-.94-.415-1.524-.415-1.654 0-3 1.346-3 3z"
+                />
+              </svg>
+            </div>
+            <h4>Hardscaping</h4>
+          </a>
+          <a href="#" class="s-card">
+            <div class="icon">
+              <svg
+                enable-background="new 0 0 60 60"
+                height="60"
+                viewBox="0 0 60 60"
+                width="60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m34 30h-2v-7c0-.542-.327-1-.714-1h-2.572c-.387 0-.714.458-.714 1v7h-2v-7c0-1.654 1.218-3 2.714-3h2.572c1.496 0 2.714 1.346 2.714 3z"
+                />
+                <path d="m31 5h2v16.182h-2z" />
+                <path d="m27 9h2v12.182h-2z" />
+                <path d="m27 5h2v2h-2z" />
+                <path
+                  d="m47.324 44.968h11.823v2h-11.823z"
+                  transform="matrix(.2985 .9544 -.9544 .2985 81.2168 -18.5618)"
+                />
+                <path
+                  d="m34.341 18.724h21.552v2h-21.552z"
+                  transform="matrix(.3 .9539 -.9539 .3 50.397 -29.2317)"
+                />
+                <path
+                  d="m36.783 46.77h13.909v2h-13.909z"
+                  transform="matrix(.1816 .9834 -.9834 .1816 82.7726 -3.9133)"
+                />
+                <path
+                  d="m32.201 22.173h13.925v2.001h-13.925z"
+                  transform="matrix(.194 .981 -.981 .194 54.2997 -19.7407)"
+                />
+                <path d="m33 44h2v12h-2z" />
+                <path
+                  d="m49.904 42c-1.689 0-2.913-.829-3.54-2.397l-.544-1.359-1.448 2.414c-.505.84-1.392 1.342-2.372 1.342-1.054 0-1.83-.439-2.372-1.343l-1.628-2.714-1.628 2.714c-.519.866-1.362 1.343-2.372 1.343-.966 0-1.875-.515-2.372-1.343l-1.628-2.714-1.628 2.714c-.505.841-1.392 1.343-2.372 1.343-.966 0-1.875-.515-2.372-1.343l-1.628-2.714-1.628 2.714c-.534.891-1.333 1.343-2.372 1.343-.966 0-1.875-.515-2.372-1.343l-1.448-2.414-.508 1.271c-.67 1.673-1.871 2.486-3.672 2.486-1.71 0-3-1.29-3-3v-7c0-1.654 1.389-3 3.096-3h39.809c1.706 0 3.095 1.346 3.095 3v7c0 1.738-1.302 3-3.096 3zm-3.724-8.243 2.042 5.104c.319.799.822 1.14 1.683 1.14.952-.001 1.095-.628 1.095-1.001v-7c0-.552-.491-1-1.096-1h-39.808c-.605 0-1.096.448-1.096 1v7c0 .483.263 1 1 1 .977 0 1.451-.321 1.814-1.229l2.006-5.014 3.522 5.871c.138.229.39.372.658.372.333 0 .486-.087.657-.372l3.343-5.571 3.343 5.571c.277.462 1.037.464 1.314 0l3.343-5.571 3.343 5.571c.137.229.389.372.657.372.305 0 .501-.111.657-.372l3.343-5.571 3.343 5.571c.165.274.289.372.657.372.358 0 .556-.202.657-.372z"
+                />
+                <path
+                  d="m5.759 40.095h2v11.84h-2z"
+                  transform="matrix(.9549 .2968 -.2968 .9549 13.9631 .0675)"
+                />
+                <path
+                  d="m13.825 8.898h2v21.58h-2z"
+                  transform="matrix(.9558 .2939 -.2939 .9558 6.4404 -3.4876)"
+                />
+                <path
+                  d="m15.262 40.818h2v13.907h-2z"
+                  transform="matrix(.9834 .1816 -.1816 .9834 8.9475 -2.1592)"
+                />
+                <path
+                  d="m19.796 16.25h2.001v13.874h-2.001z"
+                  transform="matrix(.9821 .1884 -.1884 .9821 4.7413 -3.5029)"
+                />
+                <path d="m25 44h2v12h-2z" />
+              </svg>
+            </div>
+            <h4>Leaf Cleaning</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Service -->
+
+    <!-- Experience -->
+    <section class="experience row flex container">
+      <div class="experience-cards row">
+        <div class="e-card">
+          <h1>84+</h1>
+          <p>Happy Clients</p>
+        </div>
+        <div class="e-card">
+          <h1>234+</h1>
+          <p>Projects Completed</p>
+        </div>
+        <div class="e-card">
+          <h1>33+</h1>
+          <p>Awards Win</p>
+        </div>
+        <div class="e-card">
+          <h1>37</h1>
+          <p>Years in Business</p>
+        </div>
+      </div>
+      <div class="experience-content">
+        <h1>37 years experience</h1>
+        <p>
+          Our Company has been the leading provided contruction services to
+          clients throughout the USA since 1980.
+        </p>
+        <a href="#" class="page-btn-2">Contact us</a>
+      </div>
+    </section>
+    <!-- End Experience -->
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+      <div class="subscribe-content row container">
+        <div>
+          <h2>Let us take property to the next level</h2>
+          <p>Just one call away: <a href="tel:+7607558543">+760-755-8543</a></p>
+        </div>
+        <a href="#contact" class="page-btn active">Get Your Estimate</a>
+      </div>
+    </section>
+    <!-- End Subscribe -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer row flex container">
+        <div class="footer-details row">
+          <ul>
+            <li class="row">
+              <h5>Address:</h5>
+              <p>782 Via Barquero</p>
+            </li>
+            <li class="row">
+              <h5>Phone:</h5>
+              <p>+760 755 8543</p>
+            </li>
+            <li class="row">
+              <h5>Email:</h5>
+              <p>fabianga2580@gmail.com</p>
+            </li>
+          </ul>
+          <a href="#" class="logo"><img src="./imgs/logo.svg" alt="" /></a>
+        </div>
+       
+        <div class="footer-content">
+          <h5>Newsletter:</h5>
+          <form action="" class="row">
+            <input type="email" name="" id="" placeholder="Your email here" />
+            <button type="submit" class="page-btn-2">Subscribe</button>
+          </form>
+          <h5>Social:</h5>
+          <div class="media-links row">
+            <a href="#">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <path
+                  d="M20 0.799805C9.39599 0.799805 0.799988 9.39581 0.799988 19.9998C0.799988 30.6038 9.39599 39.1998 20 39.1998C30.604 39.1998 39.2 30.6038 39.2 19.9998C39.2 9.39581 30.604 0.799805 20 0.799805ZM15.3 27.9578H11.412V15.4458H15.3V27.9578ZM13.332 13.9098C12.104 13.9098 11.31 13.0398 11.31 11.9638C11.31 10.8658 12.128 10.0218 13.382 10.0218C14.636 10.0218 15.404 10.8658 15.428 11.9638C15.428 13.0398 14.636 13.9098 13.332 13.9098ZM29.5 27.9578H25.612V21.0238C25.612 19.4098 25.048 18.3138 23.642 18.3138C22.568 18.3138 21.93 19.0558 21.648 19.7698C21.544 20.0238 21.518 20.3838 21.518 20.7418V27.9558H17.628V19.4358C17.628 17.8738 17.578 16.5678 17.526 15.4438H20.904L21.082 17.1818H21.16C21.672 16.3658 22.926 15.1618 25.024 15.1618C27.582 15.1618 29.5 16.8758 29.5 20.5598V27.9578V27.9578Z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <path
+                  d="M20 0.799805C9.39599 0.799805 0.799988 9.39581 0.799988 19.9998C0.799988 30.6038 9.39599 39.1998 20 39.1998C30.604 39.1998 39.2 30.6038 39.2 19.9998C39.2 9.39581 30.604 0.799805 20 0.799805ZM27.81 16.5278C27.818 16.6918 27.82 16.8558 27.82 17.0158C27.82 22.0158 24.018 27.7778 17.062 27.7778C15.0066 27.7812 12.9939 27.1909 11.266 26.0778C11.56 26.1138 11.862 26.1278 12.168 26.1278C13.94 26.1278 15.57 25.5258 16.864 24.5098C16.0754 24.4943 15.3113 24.2332 14.6782 23.7628C14.0451 23.2925 13.5745 22.6363 13.332 21.8858C13.8983 21.9935 14.4817 21.9709 15.038 21.8198C14.1821 21.6467 13.4124 21.183 12.8594 20.5071C12.3064 19.8313 12.0042 18.985 12.004 18.1118V18.0658C12.514 18.3478 13.098 18.5198 13.718 18.5398C12.9156 18.0057 12.3476 17.1851 12.1301 16.2461C11.9126 15.307 12.0621 14.3203 12.548 13.4878C13.4979 14.6558 14.6825 15.6113 16.0251 16.2924C17.3677 16.9736 18.8384 17.3651 20.342 17.4418C20.1508 16.6304 20.2331 15.7786 20.576 15.0188C20.9189 14.259 21.5032 13.6338 22.2381 13.2403C22.973 12.8469 23.8173 12.7073 24.6398 12.8431C25.4622 12.979 26.2167 13.3829 26.786 13.9918C27.6323 13.8244 28.4439 13.5139 29.186 13.0738C28.9039 13.9501 28.3133 14.6942 27.524 15.1678C28.2737 15.0775 29.0057 14.876 29.696 14.5698C29.189 15.3296 28.5503 15.9927 27.81 16.5278V16.5278Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="container">
+          <p>ProtecMarketing &copy; 2024. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

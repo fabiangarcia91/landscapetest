@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Landscaping Contractor Website template",
+			"path": "."
+		},
+		{
+			"name": "Landscaping Icons",
+			"path": "../Landscaping Icons"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Landscaping Contractor Website template"
+	}
+}
